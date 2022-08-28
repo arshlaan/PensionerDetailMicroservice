@@ -1,23 +1,10 @@
 package com.cognizant.PensionerDetailMicroservice.model;
 
-import javax.persistence.Embeddable;
-
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-
-@Embeddable
-@Getter
-@Setter
-@NoArgsConstructor
-@AllArgsConstructor
 public class BankDetails {
 	private String bankName;
 	private String accountNumber;
 	private String bankType;
 	public BankDetails(String bankName, String accountNumber, String bankType) {
-		super();
 		this.bankName = bankName;
 		this.accountNumber = accountNumber;
 		this.bankType = bankType;
